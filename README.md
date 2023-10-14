@@ -25,4 +25,5 @@
 🏢 Create an EC2 instance -> vpc-aws-public-ec2 -> select vpc-aws-ec2 -> select subnet vpc-aws-public-subnet -> Enable Auto-assign public IP \
 🏢 Create an EC2 instance -> vpc-aws-private-ec2 -> select vpc-aws-ec2 -> select subnet vpc-aws-private-subnet -> Disable Auto-assign public IP \
 🚀 Try to perform SSH into vps-aws-private-ec2 from vps-aws-public-ec2 -> ping 0.0.0.0. \
-If you get the ping, your VPC is working perfectly! 🎉
+    
+    If you get the ping, your VPC is working perfectly! 🎉
