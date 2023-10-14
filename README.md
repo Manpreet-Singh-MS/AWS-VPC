@@ -23,8 +23,8 @@ Follow these steps to set up your AWS Virtual Private Cloud (VPC):
  🖱️ Click on `vpc-aws-public-route` -> Select route -> Edit route -> Add internet gateway -> `vpc-aws-igtw` \
  🌐 Select NAT gateways -> Create NAT gateway -> `vpc-aws-NAT` -> Select `vpc-aws-public-subnet` -> Select public -> Allocate Elastic IP. \
  🛣️ Select Route table -> `vpc-aws-private-route` -> Edit route -> Select NAT -> `vpc-aws-NAT` \
- 🏢 Create an EC2 instance -> `vpc-aws-public-ec2` -> Select `vpc-aws-ec2` -> Select subnet `vpc-aws-public-subnet` -> Enable Auto-assign public IP \
- 🏢 Create an EC2 instance -> `vpc-aws-private-ec2` -> Select `vpc-aws-ec2` -> Select subnet `vpc-aws-private-subnet` -> Disable Auto-assign public IP \
- 🚀 Try to perform SSH into `vps-aws-private-ec2` from `vps-aws-public-ec2` -> ping `0.0.0.0`. \
+ 🏢 Create an EC2 instance -> `vpc-aws-public-ec2` -> Edit Network Settings & Select `vpc-aws-ec2` as VPC -> Select subnet as `vpc-aws-public-subnet` -> Enable Auto-assign public IP \
+ 🏢 Create an EC2 instance -> `vpc-aws-private-ec2` -> Edit Network Settings & Select `vpc-aws-ec2` as VPC -> Select subnet as `vpc-aws-private-subnet` -> Disable Auto-assign public IP \
+ 🚀 Perform SSH into `vps-aws-private-ec2` from `vps-aws-public-ec2` -> ping `0.0.0.0`. \
  \
-If you get the ping, your VPC is working perfectly! 🎉
+If you get the ping in vps-aws-private-ec2, then VPC is working perfectly! 🎉
