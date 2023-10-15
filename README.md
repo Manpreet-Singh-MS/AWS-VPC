@@ -25,6 +25,6 @@ Follow these steps to set up your AWS Virtual Private Cloud (VPC):
  🛣️ Select Route table -> `vpc-aws-private-route` -> Edit route -> Select NAT -> `vpc-aws-NAT` \
  🏢 Create an EC2 instance -> `vpc-aws-public-ec2` -> Edit Network Settings & Select `vpc-aws-ec2` as VPC -> Select subnet as `vpc-aws-public-subnet` -> Enable Auto-assign public IP \
  🏢 Create an EC2 instance -> `vpc-aws-private-ec2` -> Edit Network Settings & Select `vpc-aws-ec2` as VPC -> Select subnet as `vpc-aws-private-subnet` -> Disable Auto-assign public IP \
- 🚀 Perform SSH into `vps-aws-private-ec2` from `vps-aws-public-ec2` -> ping `0.0.0.0`. \
+ 🚀 Perform SSH into `vpc-aws-private-ec2` from `vpc-aws-public-ec2` -> ping `0.0.0.0`. \
  \
-If you get the ping in vps-aws-private-ec2, then VPC is working perfectly! 🎉
+If you get the ping in vpc-aws-private-ec2, then VPC is working perfectly! 🎉
